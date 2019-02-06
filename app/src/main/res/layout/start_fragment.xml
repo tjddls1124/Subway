@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <ImageView
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_width="118dp"
+            android:layout_height="153dp"
+            app:srcCompat="@drawable/sandwich"
+            android:id="@+id/iv_allMenuButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintVertical_bias="0.501"/>
+    <TextView
+            android:text="전체 메뉴"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/iv_allMenuButton"
+            android:layout_width="118dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" android:id="@+id/textView"/>
+    <ImageView
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_width="118dp"
+            android:layout_height="152dp"
+            app:layout_constraintLeft_toRightOf="@id/iv_allMenuButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/meetball" android:id="@+id/iv_myMenuButton"/>
+    <ImageView
+            android:layout_width="118dp"
+            android:layout_height="108dp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/iv_myMenuButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/bill" android:id="@+id/iv_orderedHistoryButton"/>
+    <TextView
+            android:text="주문내역"
+            app:layout_constraintLeft_toRightOf="@id/textView2"
+            app:layout_constraintTop_toBottomOf="@id/iv_orderedHistoryButton"
+            android:layout_width="118dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" android:id="@+id/textView3"/>
+    <TextView
+            android:text="나만의 메뉴"
+            app:layout_constraintLeft_toRightOf="@id/textView"
+            app:layout_constraintBottom_toBottomOf="@id/iv_allMenuButton"
+            android:layout_width="118dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" android:id="@+id/textView2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

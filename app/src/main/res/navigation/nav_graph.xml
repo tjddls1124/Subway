@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph" app:startDestination="@id/start2">
+
+    <fragment android:id="@+id/start2" android:name="com.example.subway.ui.start.Start" android:label="Start">
+        <action android:id="@+id/action_start2_to_allMenus2" app:destination="@id/allMenus"/>
+        <action android:id="@+id/action_start2_to_myMenus2" app:destination="@id/myMenus"/>
+    </fragment>
+    <fragment android:id="@+id/allMenus" android:name="com.example.subway.AllMenu.AllMenus"
+              android:label="all_menus_fragment" tools:layout="@layout/all_menus_fragment"/>
+    <fragment android:id="@+id/myMenus" android:name="com.example.subway.MyMenu.MyMenus"
+              android:label="my_menus_fragment" tools:layout="@layout/my_menus_fragment"/>
+</navigation>
